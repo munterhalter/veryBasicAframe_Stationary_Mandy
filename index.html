@@ -64,33 +64,84 @@
         Components/attributes come usually in name/value pairs.
         -->
 
-      <!-- This is a red box-->
+      <!-- This is the FRONT floor (LIGHT GREEN)-->
       <a-entity
-        id="box1"
-        geometry="primitive: box"
-        material="color: red"
-        position="1 0 -5"
-        rotation="0 0 0"
-      ></a-entity>
-
-      <!-- This is a blue box-->
-      <a-entity
-        id="box2"
-        geometry="primitive: box--"
-        material="color: blue"
-        position="-1 0 -5"
-        rotation="0 45 0"
-      >
-      </a-entity>
-
-      <!-- This is the floor-->
-      <a-entity
-        id="floor"
+        id="floorFront"
         geometry="primitive: plane; width: 20; height: 20"
         material="color: #7BC8A4; side: double"
         height="100"
         width="100"
         rotation="-90 00 00"
+      ></a-entity>
+      <!-- This is the TOP floor (ROYAL BLUE)-->
+      <a-entity
+        id="floorTop"
+        geometry="primitive: plane; width: 20; height: 20"
+        material="color: blue; side: double"
+        height="100"
+        width="100"
+        rotation="-90 00 00"
+        position="0 0 -20"
+      ></a-entity>
+      <!-- This is the Bottom floor (ORANGE)-->
+      <a-entity
+        id="floorBottom"
+        geometry="primitive: plane; width: 20; height: 20"
+        material="color: orange; side: double"
+        height="100"
+        width="100"
+        rotation="-90 00 00"
+        position="0 0 20"
+      ></a-entity>
+      <!-- This is the LEFT floor (PINK)-->
+      <a-entity
+        id="floorLeft"
+        geometry="primitive: plane; width: 20; height: 20"
+        material="color: pink; side: double"
+        height="100"
+        width="100"
+        rotation="-90 00 00"
+        position="-20 0 0"
+      ></a-entity>
+      <!-- This is the LEFT floor (PINK)-->
+      <a-entity
+        id="floorLeft"
+        geometry="primitive: plane; width: 20; height: 20"
+        material="color: pink; side: double"
+        height="100"
+        width="100"
+        rotation="-90 00 00"
+        position="-20 0 0"
+      ></a-entity>
+      <!-- This is the LEFT floor (PINK)-->
+      <a-entity
+        id="floorRIGHT"
+        geometry="primitive: plane; width: 20; height: 20"
+        material="color: pink; side: double"
+        height="100"
+        width="100"
+        rotation="-90 00 00"
+        position="20 0 0"
+      ></a-entity>
+      <!-- This is the RIGHT floor (GRAY)-->
+      <a-entity
+        id="floorRIGHT"
+        geometry="primitive: plane; width: 20; height: 20"
+        material="color: gray; side: double"
+        height="100"
+        width="100"
+        rotation="-90 00 00"
+        position="20 0 0"
+      ></a-entity>
+      <!-- This is the RIGHT floor (YELLOW)-->
+      <a-entity
+        id="floorBACK"
+        geometry="primitive: plane; width: 20; height: 20"
+        material="color: yellow; side: double"
+        height="100"
+        width="100"
+        rotation="-90 00 00"
+        position="40 0 0"
       ></a-entity>
       <!-- We add a sky (making it a more pleasant color than white) -->
       <!-- A-Frame has some pre-configured entities, called primitives, that can be invoked with a special tag. For example <a-sky> below. 
@@ -99,56 +150,8 @@
     For more information about primitives, see https://aframe.io/docs/1.4.0/introduction/html-and-primitives.html .
     For a complete list of premitives, see the `primitives` section in https://aframe.io/docs .
     -->
-      <!-- This will hopefully be a purple sphere -->
-      <a-entity
-        id="sphere"
-        geometry="primitive: sphere"
-        position="5 1 4"
-        radius="1"
-        material="color: black"
-      >
-      </a-entity>
-      <!-- this should be a dark yellow cylinder-->
-      <a-entity
-        id="cylinderPink"
-        geometry="primitive: cylinder"
-        position="3 4 -3"
-        radius="0.5"
-        height="1"
-        material="color: pink"
-      ></a-entity>
-      <!-- This will hopefully be a silver dodecahedron-->
-      <a-entity
-        id="dodecahedronGreen"
-        geometry="primitive: dodecahedron"
-        radius="2"
-        position="-3 0 -5"
-        material="color: green"
-      >
-        <!-- id and geometry are the same  -->
-      </a-entity>
-      <!-- this will hopefully be a white icosahedron-->
-      <a-entity
-        id="icosahedronOrange"
-        geometry="primitive: icosahedron"
-        radius="3"
-        position="1 2 -5"
-        material="color: orange"
-      >
-      </a-entity>
-      <!-- the two above shapes are together to form...something fun. -->
-      <!-- this will be an icosahedron-->
+      <!-- id and geometry are the same, one is the name and one is actually coding it  -->
 
-      <!-- this will hopefully be a white icosahedron-->
-      <a-entity
-        id="icosahedronBlue"
-        geometry="primitive: icosahedron"
-        radius="2"
-        position="3 2 5"
-        material="color: blue"
-      >
-        <!-- this will be a dodecahedron-->
-      </a-entity>
       <a-sky id="sky" color="#1A0A2A"></a-sky>
     </a-scene>
   </body>
