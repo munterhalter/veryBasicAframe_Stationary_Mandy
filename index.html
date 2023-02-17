@@ -100,38 +100,52 @@
     For a complete list of premitives, see the `primitives` section in https://aframe.io/docs .
     -->
       <!-- This will hopefully be a purple sphere -->
-      <a-sphere position="5 1 4" radius="1" color="purple"> </a-sphere>
+      <a-entity
+        id="sphere"
+        geometry="primitive: sphere"
+        position="5 1 4"
+        radius="1"
+        material="color: black"
+      >
+      </a-entity>
       <!-- this should be a dark yellow cylinder-->
-      <a-cylinder
+      <a-entity
+        id="cylinderPink"
+        geometry="primitive: cylinder"
         position="3 4 -3"
         radius="0.5"
         height="1"
-        color="#FFC65D"
-      ></a-cylinder>
+        material="color: pink"
+      ></a-entity>
       <!-- This will hopefully be a silver dodecahedron-->
       <a-entity
-        geometry="primitive: dodecahedron;
-       radius: 2"
-        position="-3 2 -5"
-        color="silver"
+        id="dodecahedronGreen"
+        geometry="primitive: dodecahedron"
+        radius="2"
+        position="-3 0 -5"
+        material="color: green"
       >
+        <!-- id and geometry are the same  -->
       </a-entity>
       <!-- this will hopefully be a white icosahedron-->
       <a-entity
-        geometry="primitive: icosahedron;
-     radius: "3"
+        id="icosahedronOrange"
+        geometry="primitive: icosahedron"
+        radius="3"
         position="1 2 -5"
-        color="white"
-      >      </a-entity>
-        <!-- the two above shapes are together to form...something fun. -->
-        <!-- this will be an icosahedron-->
+        material="color: orange"
+      >
+      </a-entity>
+      <!-- the two above shapes are together to form...something fun. -->
+      <!-- this will be an icosahedron-->
 
       <!-- this will hopefully be a white icosahedron-->
       <a-entity
-        geometry="primitive: icosahedron;
-        radius: "2"
+        id="icosahedronBlue"
+        geometry="primitive: icosahedron"
+        radius="2"
         position="3 2 5"
-        color="C4F834"
+        material="color: blue"
       >
         <!-- this will be a dodecahedron-->
       </a-entity>
